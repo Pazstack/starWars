@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex justify-content-center" href="#">
+                <img src="./assets/imgs/dcbrky3-d4685ae4-a280-40ab-a56f-8c93c5eea8d9.jpg" alt="Character 1" class="img-fluid">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-white text-center py-3" style="background-color: #1a1919;">
+        <h1 style="color: #feda4a;">Explora el Universo de Star Wars</h1>
+        <p style="color: #b0b0b0;">Haz clic en los botones de abajo para ver información sobre los personajes más populares de nuestra saga favorita, personajes secundarios y otros.</p>
+    </div>
+
+    <header class="container text-center my-5" style="background-color: #1a1919; padding: 20px; border-radius: 10px;">
+        <h2 style="color: #feda4a;">Descubre a tus Personajes Favoritos</h2>
+        <p style="color: #b0b0b0;">Selecciona un rango para obtener detalles sobre los personajes de Star Wars, incluyendo su altura y peso.</p>
+    </header>
+
+    <div class="container mt-5"> <!-- mt-5 para separar del nav -->
+        <!-- Contenido Principal -->
+        <div class="row mb-4 text-center">
+            <div class="col">
+                <button class="btn btn-outline-warning range" data-start="1" data-end="5">1 - 5</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-warning range" data-start="6" data-end="11">6 - 11</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-warning range" data-start="12" data-end="17">12 - 17</button>
+            </div>
+        </div>
+
+        <div class="row" id="characterContainer">
+            <!-- bloques de personajes dinamicos -->
+        </div>
+    </div>
+
+<footer class="text-center py-3 mt-auto" style="background-color: #111; color: #b0b0b0;">
+    <p>Que la Fuerza te acompañe...</p>
+    <p>Desarrollado por Paz Gtz Portillo <span>&#174;</span></p>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
